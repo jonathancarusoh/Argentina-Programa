@@ -147,13 +147,21 @@ height: 50px;
     font-weight: 900;
     color: white;
     text-decoration: underline;
+    text-align: center;
 }
 
+.titulo-experiencia {
+    font-weight: 900;
+    color: white;
+text-align: center;
+
+}
 
 
 .group-experiencia{
 display: flex;
 flex-direction: row;
+text-align: center;
 
 
 
@@ -162,7 +170,9 @@ flex-direction: row;
 .item-experiencia{
 
 flex-direction: column;
-margin: 20px;
+margin: 30px;
+padding: 20px;
+flex: 1;
 
 
 }
@@ -179,7 +189,7 @@ margin: 20px;
 /*HABILIDADES*/
 
 .container-habilidades {
-    background:rgb(50, 85, 107); 
+    background:white; 
      position: relative;
     top: 55px;
     display: flex;
@@ -278,4 +288,33 @@ padding: 10px;
    
    }
 
-   
+   @media (max-width: 750px) {
+
+
+    /*EXPERIENCIA*/
+    
+.group-experiencia{
+    flex-direction: column;
+    
+    
+    
+    }
+    
+      /*CONTACTO*/
+    .container-contacto{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .group-contacto{
+      
+        margin: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+  
+       }
+
+
+ 
+
+   }
