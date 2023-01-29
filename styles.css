@@ -11,7 +11,7 @@ body{
    
 }
 
-/*NAVBAR*//*NAVBAR*//*NAVBAR*//*NAVBAR*//*NAVBAR*/
+/*NAVBAR*/
  nav {
       position: fixed !important;
        background:rgb(66, 98, 118); 
@@ -100,7 +100,9 @@ height: 50px;
    
     width: 220px;
     height: 300px;
-    background-color:rgb(104, 85, 191);
+   border-radius: 25px;
+  border: solid rgb(0, 204, 255);
+    object-fit: cover;
 }
 
 
@@ -112,7 +114,7 @@ height: 50px;
 
 .text-info-personal-puesto { 
     position: relative;
-    top: -30px;
+    top: -20px;
     
 
 }
