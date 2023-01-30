@@ -2,14 +2,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.fondo-2 {
-    
-}
-
-body{
-  
-   
-}
 
 /*NAVBAR*/
  nav {
@@ -21,33 +13,60 @@ body{
      
      }
 
+     .navbar-toggler{
+        width: 45px;
+        height: 45px;
+        display: flex;
+        transform: rotate(180deg);
+        transition: .5s;
+        
+     }
+
+     .navbar-toggler-icon{
+
+margin: auto;
+      
+     }
+
+     .rotate {
+        transform: rotate(90deg);
+       
+     }
+
      .nav-item {
       display: flex;
       flex-direction: row;
      
      }
 
-     /*.nav-item-text {
-        color: rgb(219, 31, 31) !important;
-        opacity: 1 !important;
-     }
-*/
+     .nav-item-text {
+        font-size: 1em;
+        transition: 0.5s;
+        color:white ;
+    }
+    
+    .efecto-text-nav,
+    .icon-bootstrap {
+       font-weight: bold;
+        font-size: 1.1em;
+        transition: .3s;
+     
+    }
+    
      .icon-bootstrap {
     position: relative;
-    top: 12px;
-  padding-left: 20px;
-  padding-right: 5px;
+ 
+    color: white;
+    
+   
+ 
+ 
     }
 
-.group-nav {
-   text-align: center;
-   display: flex;
-  justify-content: center;
-  align-items: center;
-height: 50px;
- width: 100px;
- background-color: rgb(85, 87, 191);
- margin-left:30px ;
+.nav-item {
+    position: relative;
+    padding-left: 20px;
+    
 }
 
 
@@ -80,7 +99,7 @@ height: 50px;
   
     position: relative;
   top: 55px;
-    height: 500px;
+    height: 520px;
  
   
 }
@@ -92,9 +111,22 @@ height: 50px;
     text-align: center;
 }
 
+
+.text-info-personal-nombre {
+    padding-top: 20px;
+    font-size: 1.6em;
+}
+
+.text-info-personal-puesto { 
+    position: relative;
+    top: -10px;
+    
+
+}
+
 .img-info-personal {
     position: relative;
-    top: -110px;
+    top: -10px;
     margin: auto;
     display: flex;
    
@@ -105,27 +137,20 @@ height: 50px;
     object-fit: cover;
 }
 
-
-
-.text-info-personal-nombre {
-    padding-top: 10px;
-    font-size: 1.6em;
-}
-
-.text-info-personal-puesto { 
-    position: relative;
-    top: -20px;
-    
-
-}
 .text-info-personal-fecha{
     position: relative;
-    top:290px ;
+    top:px ;
 }
 
+.fa-solid{
+    padding-right: 10px; 
+}
+.fa-location-dot{
+   
+}
 .text-info-personal-direccion{
     position: relative;
-    top:280px ;
+   
 }
 
 
@@ -145,7 +170,7 @@ height: 50px;
 
 .title-experiencia {
     position: relative;
-    top: 10px;
+    top: 20px;
     font-weight: 900;
     color: white;
     text-decoration: underline;
@@ -191,7 +216,7 @@ flex: 1;
 /*HABILIDADES*/
 
 .container-habilidades {
-    background:white; 
+    background:rgb(255, 255, 255); 
      position: relative;
     top: 55px;
     display: flex;
@@ -206,7 +231,7 @@ flex: 1;
     top: 10px;
 
     font-weight: 900;
-    color: rgb(255, 255, 255);
+    color: rgb(102, 144, 170);
     text-decoration: underline;
 }
 
@@ -277,8 +302,9 @@ padding: 10px;
    
 }
 
-.item-contacto p{
+.item-contacto a{
     color: white;
+    text-decoration: none;
 }
 
    .item-contacto i {
@@ -289,6 +315,29 @@ padding: 10px;
    color: white;
    
    }
+
+
+
+
+
+
+
+   @media (max-width: 991px) {
+    .nav-item {
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .icon-bootstrap {
+      
+        left: 0px;
+       
+     
+     
+        }
+
+   }
+
+
 
    @media (max-width: 750px) {
 
@@ -305,8 +354,9 @@ padding: 10px;
       /*CONTACTO*/
     .container-contacto{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+     justify-content: center;
+     align-items: center;
+
     }
     .group-contacto{
       
@@ -314,6 +364,13 @@ padding: 10px;
         padding-left: 0px;
         padding-right: 0px;
   
+        
+       }
+
+       .item-contacto-2 {
+        position: relative;
+        left: -8px;
+
        }
 
 
